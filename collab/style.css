@@ -1,0 +1,167 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.collab-canvas-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f4f9ff;
+  min-height: 100vh;
+  color: #1f3b57;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #114e8a;
+}
+
+/* Invite Section */
+.invite-section {
+  background-color: #ffffff;
+  padding: 16px;
+  border-left: 6px solid #1f74d1;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.invite-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.invite-section input::placeholder {
+  color: #aaa;
+}
+
+#sendInviteBtn {
+  padding: 10px;
+  background-color: #1f74d1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#sendInviteBtn:hover {
+  background-color: #155ab3;
+}
+
+.success-box {
+  display: none;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.sidebar-item {
+  width: 48px;
+  height: 48px;
+  background-color: #e0efff;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.sidebar-item:hover {
+  transform: scale(1.1);
+}
+
+.sidebar-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main Panel */
+.main-panel {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.participants,
+.messages {
+  flex: 1;
+  min-width: 250px;
+  max-height: 200px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.participants h3,
+.messages h3 {
+  margin-bottom: 10px;
+  color: #1f3b57;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participants ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.participants li {
+  padding: 6px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.participants li:hover {
+  background-color: #f5faff;
+}
+
+#messageBox p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #f2f8ff;
+  border-radius: 6px;
+  cursor: pointer;
+}

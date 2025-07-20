@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collab Canvas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="collab-canvas-container">
+
+    <!-- Header -->
+    <div class="header">
+      <img src="https://i.postimg.cc/gcRXpRCH/partners.png" alt="Collab Canvas Logo" class="logo" />
+      <h1>Collab Canvas</h1>
+    </div>
+
+    <!-- Invite Section -->
+    <div class="invite-section">
+      <input type="email" placeholder="Enter collaborator's email" id="emailInput" />
+      <button id="sendInviteBtn">Send Invite</button>
+      <div id="successMessage" class="success-box">✅ Invite sent successfully!</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-item" title="Enable/Disable Audio">
+        <img src="https://i.postimg.cc/cCNJC9pM/audio.png" alt="Audio Icon" />
+      </div>
+      <div class="sidebar-item" title="Screen Share Mode">
+        <img src="https://i.postimg.cc/3NLzVWF4/sharing.png" alt="Share Screen Icon" />
+      </div>
+      <div class="sidebar-item" title="Live Editing Mode">
+        <img src="https://i.postimg.cc/nh5pMS7j/live-stream.png" alt="Live Editing Icon" />
+      </div>
+      <div class="sidebar-item" title="Presentation Mode">
+        <img src="https://i.postimg.cc/P56NyMDT/presentation.png" alt="Presentation Icon" />
+      </div>
+    </div>
+
+    <!-- Main Panel -->
+    <div class="main-panel">
+      <!-- Participants -->
+      <div class="participants">
+        <h3><img src="https://i.postimg.cc/XvmqS7xP/group.png" alt="Icon" width="20"> Participants</h3>
+        <ul id="participantList">
+          <li>You (Admin)</li>
+          <li>Aleena</li>
+          <li>Hamza</li>
+          <li>Guest1</li>
+          <li>Guest2</li>
+        </ul>
+      </div>
+
+      <!-- Messages -->
+      <div class="messages">
+        <h3><img src="https://i.postimg.cc/NGph5Pvs/mark.png" alt="Icon" width="20"> Messages</h3>
+        <div id="messageBox">
+          <p>Hello everyone!</p>
+          <p>Welcome to the collab session.</p>
+          <p>Remember to save changes.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
