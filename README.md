@@ -11,7 +11,7 @@
 -  Lightweight, responsive, and user-friendly interface
 
 
-## 🛠 Built With
+## Built With
 
 - HTML  
 - CSS  
